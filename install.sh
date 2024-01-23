@@ -2,6 +2,7 @@
 
 INSTALL_PATH="/opt/remote"
 
+apt update
 apt install -y git
 apt autoremove -y
 

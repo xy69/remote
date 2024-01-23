@@ -1,5 +1,7 @@
 #!/bin/zsh
 
+source ~/.zshrc
+
 # Check if pfetch is already installed
 if command -v pfetch &>/dev/null; then
     echo "pfetch is already installed."
@@ -11,6 +13,8 @@ SCRIPT_DIR=$(dirname -- "$(realpath -- "$0")")
 . "$SCRIPT_DIR/../lib/check-sudo.sh"
 
 ./cargo.sh
+
+source ~/.zshrc
 
 # Install pfetch
 cargo install pfetch

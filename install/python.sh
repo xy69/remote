@@ -1,5 +1,7 @@
 #!/bin/zsh
 
+source ~/.zshrc
+
 # Check if python is already installed
 if command -v python &>/dev/null; then
     echo "python is already installed."
@@ -11,6 +13,8 @@ SCRIPT_DIR=$(dirname -- "$(realpath -- "$0")")
 . "$SCRIPT_DIR/../lib/check-sudo.sh"
 
 ./pyenv.sh
+
+source ~/.zshrc
 
 pyenv install 3.12
 pyenv global 3.12

@@ -1,5 +1,7 @@
 #!/bin/zsh
 
+source ~/.zshrc
+
 # Check if cargo is already installed
 if command -v cargo &>/dev/null; then
     echo "Cargo is already installed."
@@ -13,4 +15,3 @@ SCRIPT_DIR=$(dirname -- "$(realpath -- "$0")")
 # Install cargo
 curl https://sh.rustup.rs -sSf | sh -s -- -y
 echo 'source "$HOME/.cargo/env"' >> ~/.zshrc
-source ~/.zshrc

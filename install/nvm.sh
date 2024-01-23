@@ -1,5 +1,7 @@
 #!/bin/zsh
 
+source ~/.zshrc
+
 # Check if nvm is already installed
 if command -v nvm &>/dev/null; then
     echo "nvm is already installed."
@@ -13,4 +15,3 @@ SCRIPT_DIR=$(dirname -- "$(realpath -- "$0")")
 # Install nvm
 echo 'Installing nvm...'
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
-source ~/.zshrc

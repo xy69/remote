@@ -1,5 +1,7 @@
 #!/bin/zsh
 
+source ~/.zshrc
+
 # Check if node is already installed
 if command -v node &>/dev/null; then
     echo "node is already installed."
@@ -12,9 +14,6 @@ SCRIPT_DIR=$(dirname -- "$(realpath -- "$0")")
 
 ./nvm.sh
 
-# Install nvm
-echo 'Installing nvm...'
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
 source ~/.zshrc
 
 # Install node

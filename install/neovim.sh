@@ -1,5 +1,7 @@
 #!/bin/zsh
 
+source ~/.zshrc
+
 # Check if neovim is already installed
 if command -v nvim &>/dev/null; then
     echo "neovim is already installed."
