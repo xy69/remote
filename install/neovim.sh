@@ -1,5 +1,11 @@
 #!/bin/zsh
 
+# Check if neovim is already installed
+if command -v nvim &>/dev/null; then
+    echo "neovim is already installed."
+    exit 0
+fi
+
 # Source the check-sudo.sh script
 SCRIPT_DIR=$(dirname -- "$(realpath -- "$0")")
 . "$SCRIPT_DIR/../lib/check-sudo.sh"
