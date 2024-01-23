@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Source the check-sudo.sh script
-SCRIPT_DIR=$(dirname -- "$(realpath -- "$0")")
+SCRIPT_DIR=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd -P)
 . "$SCRIPT_DIR/lib/check-sudo.sh"
 
 # Check if a username is provided

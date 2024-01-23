@@ -1,8 +1,8 @@
 #!/bin/sh
 
 # Source the check-sudo.sh script
-SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-source "$SCRIPT_DIR/lib/check-sudo.sh"
+SCRIPT_DIR=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd -P)
+. "$SCRIPT_DIR/lib/check-sudo.sh"
 
 # Add aliases to the end of .zshrc
 echo 'Adding aliases...'
