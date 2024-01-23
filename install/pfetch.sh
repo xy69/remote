@@ -12,7 +12,7 @@ fi
 SCRIPT_DIR=$(dirname -- "$(realpath -- "$0")")
 . "$SCRIPT_DIR/../lib/check-sudo.sh"
 
-./cargo.sh
+. "$SCRIPT_DIR/cargo.sh"
 
 source ~/.zshrc
 

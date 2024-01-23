@@ -12,7 +12,7 @@ fi
 SCRIPT_DIR=$(dirname -- "$(realpath -- "$0")")
 . "$SCRIPT_DIR/../lib/check-sudo.sh"
 
-./nvm.sh
+. "$SCRIPT_DIR/nvm.sh"
 
 source ~/.zshrc
 

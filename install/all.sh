@@ -6,10 +6,10 @@ SCRIPT_DIR=$(dirname -- "$(realpath -- "$0")")
 
 # ./oh-my-zsh.sh
 
-./python.sh
+. "$SCRIPT_DIR/python.sh"
 
-./node.sh
+. "$SCRIPT_DIR/node.sh"
 
-./neovim.sh
+. "$SCRIPT_DIR/neovim.sh"
 
-./pfetch.sh
+. "$SCRIPT_DIR/pfetch.sh"
