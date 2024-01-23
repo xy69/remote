@@ -2,6 +2,9 @@
 
 INSTALL_PATH="/opt/remote"
 
+apt install -y git
+apt autoremove -y
+
 # Clone the repository
 sudo git clone https://github.com/xy69/remote.git "$INSTALL_PATH"
 
