@@ -2,6 +2,6 @@ Tested on Arm Debian 12.
 
 ## How to use
 
-1. Clone this repo
-
-2. Run start.sh
+```sh
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/xy69/remote/main/start.sh)"
+```
