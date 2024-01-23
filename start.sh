@@ -16,5 +16,3 @@ apt install -y build-essential \
       curl wget zip unzip git htop tmux zsh
 
 apt autoremove -y
-
-git clone https://github.com/xy69/remote.git
