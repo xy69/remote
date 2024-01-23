@@ -1,8 +1,8 @@
-#!/bin/sh
+#!/bin/zsh
 
 # Source the check-sudo.sh script
-SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-source "$SCRIPT_DIR/lib/check-sudo.sh"
+SCRIPT_DIR=$(dirname -- "$(realpath -- "$0")")
+. "$SCRIPT_DIR/lib/check-sudo.sh"
 
 # Install Neovim
 # Prereqs: https://github.com/neovim/neovim/blob/master/BUILD.md#build-prerequisites
