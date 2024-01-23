@@ -13,3 +13,7 @@ SCRIPT_DIR=$(dirname -- "$(realpath -- "$0")")
 . "$SCRIPT_DIR/neovim.sh"
 
 . "$SCRIPT_DIR/pfetch.sh"
+
+# Print instructions for the user
+echo "To apply changes to ~/.zshrc, run the following command:"
+echo "    source ~/.zshrc"
