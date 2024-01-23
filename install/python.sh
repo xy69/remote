@@ -2,7 +2,7 @@
 
 # Source the check-sudo.sh script
 SCRIPT_DIR=$(dirname -- "$(realpath -- "$0")")
-. "$SCRIPT_DIR/lib/check-sudo.sh"
+. "$SCRIPT_DIR/../lib/check-sudo.sh"
 
 # Install Python
 # Install deps: https://devguide.python.org/getting-started/setup-building/#install-dependencies
