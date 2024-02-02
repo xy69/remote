@@ -22,3 +22,4 @@ cd /opt/remote && ./start.sh
 - local machine support (existing user)
 - network setup
 - git ssh keys setup
+- java support
