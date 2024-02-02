@@ -7,7 +7,7 @@ SCRIPT_DIR=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd -P)
 # Add aliases to the end of .zshrc
 echo 'Adding aliases...'
 echo 'alias so="source ~/.zshrc"' >> ~/.zshrc
-echo 'alias _sudo="sudo -E env \"PATH=$PATH\""' >> ~/.zshrc
+echo 'alias _sudo="sudo -E env \"PATH=\$PATH\""' >> ~/.zshrc
 
 # Print instructions for the user
 echo "To apply changes to ~/.zshrc, run the following command:"
